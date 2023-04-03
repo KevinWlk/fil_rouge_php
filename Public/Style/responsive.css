@@ -1,0 +1,179 @@
+@media only screen and (max-width: 768px) {
+    
+    header {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0; 
+        justify-content: center;
+    }
+
+    #form-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #login-form {
+        max-width: 500px;
+    }
+
+    #logIn{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+    }
+    #logIn button{
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    
+    #logIn button:hover {
+        background-color: #d1ab61b3;
+        
+    }
+    
+    #logIn h2 {
+        margin-bottom: 20px;
+    }
+    #logIn input {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 7px;
+    
+    }
+    #logIn h2{
+        align-self: center;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+    .logo {
+    max-width: 8em;
+    margin-bottom: 10px;
+    padding: 5px;
+    margin: 0;
+    }
+
+    .connect,
+    .contact {
+    padding: 5px;
+    margin: 0;
+    }
+
+    #present {
+    display: none;
+    }
+    #left_column, #right_column {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 10px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+
+    }
+    /* #left_column{
+        margin-top: 10px;
+    } */
+
+    #left_column p, #right_column p{
+        display: none;
+    }
+
+    #left_column h2, #right_column h2{
+        position: absolute;
+        font-size: 3rem;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        background-color: #000000b3;
+        width: 92.5%;
+        /* opacity: 60%; */
+    }
+
+    .diapo img{
+        max-width: 100%;
+        max-height: 100%;
+        opacity: 60%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    body{
+        height: 100vh;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .logo {
+    max-width: 30%;
+    border-radius: 10%;
+    justify-self: end;
+    }
+
+    .connect,
+    .contact {
+    font-size: 14px;
+    }
+
+    #logIn{
+        display: flex;
+    }
+
+    #logIn h2{
+        margin-bottom: 2px;
+    }
+
+    #logIn input{
+        margin-bottom: 5px;
+    }
+
+    #createAccompt{
+        display: block;
+    }
+
+    .columnSelect{
+        padding-bottom: 5spx;
+    }
+    #left_column h2, #right_column h2{
+        font-size:xx-large;
+    }
+
+    footer{
+        display: none;
+    }
+
+    .contact , .connect{
+        display: none;
+    }
+}

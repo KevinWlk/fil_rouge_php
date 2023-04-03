@@ -1,0 +1,127 @@
+@media screen and (max-width: 480px){
+    body{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        position: fixed;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 20vh;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1;
+    }
+    
+    .logo {
+        position: absolute;
+        top: 0;
+        right: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        border-radius: 10%;
+        height: 90%;
+    }
+        .burger {
+        display: flex;
+        position: fixed;
+        top: 10vh;
+        left: 5vh;
+        cursor: pointer;
+        z-index: 2;
+        }
+        
+        .burger i {
+        font-size: 40px;
+        color: #333;
+        }
+        
+        .sidebarnav {
+        display: none;
+        position: absolute;
+        top: 20vh;
+        left: 0;
+        width: 70%;
+        background-color: rgb(0, 0, 0);
+        padding: 20px;
+        text-align: center;
+        z-index: 3;
+        opacity: 90%;
+        }
+        
+        .sidebarnav.show {
+        display: block;
+        }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        height: 100vh;
+        width: 100%;
+        margin-top: 20vh;
+        background-color: antiquewhite;
+        padding: 5px;
+    }
+    .planning{
+        height: 85%;
+        width: 100%;
+        background-color: #D1AB61;
+    }
+    #title,
+    #present,
+    .connect,
+    .contact {
+        display: none;
+    }
+    #bottomMenu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        height: 60px;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+    
+    #bottomMenu ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        background-color: white;
+    }
+    
+
+    #bottomMenu a {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        text-decoration: none;
+    }
+    #bottomMenu li {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #bottomMenu i {
+        font-size: 5vh;
+        margin-right: 10px;
+    }
+
+    footer {
+        display: none;
+    }
+}    
